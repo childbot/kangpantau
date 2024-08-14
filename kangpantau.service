@@ -1,0 +1,14 @@
+[Unit]
+Description=Kangpantau RTSP Stream Recorder Service
+After=network.target
+
+[Service]
+ExecStart=/etc/kangpantau/service.sh
+Restart=always
+RestartSec=5
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
+
